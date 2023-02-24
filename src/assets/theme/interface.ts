@@ -8,12 +8,12 @@ export interface BaseTheme {
     black: string;
   };
   size: {
-    small: string;
-    medium: string;
-    large: string;
-    veryLarge: string;
-    verySmall: string;
-    default: string;
+    small: number;
+    medium: number;
+    large: number;
+    veryLarge: number;
+    verySmall: number;
+    default: number;
   };
   images: {
     [key: string]: string | number;

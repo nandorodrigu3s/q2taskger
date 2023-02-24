@@ -9,14 +9,17 @@
  */
 
 import React from 'react';
-import {SafeAreaView, Text, View} from 'react-native';
+import { SafeAreaView } from 'react-native';
+import { Container } from './src/components/atoms/container.atom.styled';
+import { AppInput } from './src/components/mols/app-input.mol';
 
 const App = () => {
   return (
     <SafeAreaView>
-      <View>
-        <Text>Cara pálida</Text>
-      </View>
+      <Container hasPadding>
+        <AppInput sideIconName={'avatarCircle'} showButton />
+        <AppInput sideIconName={'unlocked'} showButton />
+      </Container>
     </SafeAreaView>
   );
 };

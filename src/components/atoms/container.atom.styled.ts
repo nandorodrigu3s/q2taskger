@@ -42,8 +42,8 @@ export const Container = styled.View<ContainerProps>`
         ? `flex: ${props.addFlex};`
         : 'flex-grow: 1;'
       : null};
-  ${(props: ContainerProps) => props.hasBorder && 'border: 5px solid black;'};
-  ${(props: ContainerProps) => props.hasPadding && 'padding: 8px'};
+  ${(props: ContainerProps) => props.hasBorder && 'border: 1px solid #CCCED9;'};
+  ${(props: ContainerProps) => props.hasPadding && 'padding: 12px'};
   ${(props: ContainerProps) => props.margin && `margin: ${props.margin}px`};
   ${(props: ContainerProps) => props.mt && `margin-top: ${props.mt}px`};
   ${(props: ContainerProps) => props.mr && `margin-right: ${props.mr}px`};
